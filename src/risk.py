@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 
 def price_change(df: pd.DataFrame, price_col: str = "price_eur_mwh"):
