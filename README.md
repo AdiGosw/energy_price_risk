@@ -26,11 +26,11 @@ This project applies standard quantitative risk-management techniques — histor
 
 ## 4. Data
 
-- **Source**: [SMARD – Bundesnetzagentur day-ahead price data](https://www.smard.de) *(confirm/replace with your actual source)*
+- **Source**: [SMARD – Bundesnetzagentur day-ahead price data]([https://www.smard.de](https://www.smard.de/en/downloadcenter/download-market-data/?utm_source=chatgpt.com&downloadAttributes=%7B%22superCategoryId%22:3,%22subcategoryId%22:8,%22regionId%22:%22DE-LU%22,%22resolution%22:%22hour%22,%22fileType%22:%22CSV%22,%22from%22:1630447200000,%22to%22:1788213599999%7D))
 - **Market**: Germany/Luxembourg day-ahead auction
 - **Frequency**: hourly
 - **Units**: €/MWh
-- **Period covered**: *[fill in start–end date of your dataset]*
+- **Period covered**: *2021/09/01 - 2026/08/31*
 
 Raw data is provided as `Day_ahead_prices.csv`. Cleaning steps include timestamp parsing, sorting, duplicate detection, missing-value checks, and outlier inspection — with negative prices and extreme spikes explicitly preserved and analyzed rather than treated as errors.
 
