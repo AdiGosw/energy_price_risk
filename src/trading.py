@@ -36,8 +36,8 @@ def evaluate_strategy(pnl: pd.Series) -> dict:
     return {
         "total_pnl": pnl.sum(),
         "average_pnl": pnl.mean(),
-        "voltality": pnl.std(),
-        "max drawdown": drawdown.min(),
+        "volatility": pnl.std(),
+        "max_drawdown": drawdown.min(),
         "num_trades": (trades != 0).sum(),
         "win_rate": len(wins) / len(trades) if len(trades) > 0 else np.nan
     }
